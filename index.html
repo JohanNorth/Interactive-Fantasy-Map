@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Maps/favicon.png">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script src="script.js"></script>
+
+    <title>Interactive map</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="mapBoxContainer">
+            <div class="internalContainer">
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="controlsBoxContainer">
+
+            <img class="controlImage" src="assets/images/Decorations/CornerFlourish-TopRight&Left&Compass.svg" />
+
+            <!-- <img class="controlImage" src="assets/images/Decorations/CornerFlourish-Middle.svg" /> -->
+
+            <button id="resetZoomBtn">Reset map</button>
+
+            <img class="controlImage" src="assets/images/Decorations/CornerFlourish-Middle.svg" />
+
+            <div class="slider-container">
+                <h3>Show Borders</h2>
+                    <div class="sliderBox">
+                        <img class="sliderIcon" src="assets/images/Icons/borderBanner.png" />
+                        <label class="switch">
+                            <input id="toggleBorderOverlay" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+            </div>
+
+            <div class="slider-container">
+                <h3>Show Names</h2>
+                    <div class="sliderBox">
+                        <img class="sliderIcon" src="assets/images/Icons/namesScroll.png">
+                        <label class="switch">
+                            <input id="toggleNameOverlay" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+            </div>
+
+            <div class="slider-container">
+                <h3>Show Houses</h2>
+                    <div class="sliderBox">
+                        <img class="sliderIcon" src="assets/images/Icons/shieldIcon.svg">
+                        <label class="switch">
+                            <input id="toggleShieldsOverlay" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+            </div>
+
+            <img class="controlImage" src="assets/images/Decorations/CornerFlourish-Middle.svg" />
+            <img class="controlImage" src="assets/images/Decorations/CornerFlourish-BotRight&Left.svg" />
+        </div>
+    </div>
+</body>
+</html>
