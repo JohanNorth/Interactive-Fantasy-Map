@@ -1,0 +1,19 @@
+/* Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Full-page wrapper */
+  .wrapper {
+    background: red;
+    /* Just for visibility */
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
